@@ -139,6 +139,10 @@ body {
 .slider a.img04 {
   background-image: url(../img/works-thumb9.jpg);
 }
+.slider a.img05 {
+  background-image: url(../img/works-thumb10.jpg);
+  background-position: top;
+}
 
 .slider .slick-dots {
   bottom: 5%;
