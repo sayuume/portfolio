@@ -4,7 +4,7 @@ $(function () {
   var $nav = $(".header");
   var navHeight = $nav.outerHeight();
 
-  $('a[href^="#"]').on("click", function () {
+  $('a[href*="#"]').on("click", function () {
     var href = $(this).attr("href");
     var target = $(href == "#" || href == "" ? "html" : href);
     var position = target.offset().top - navHeight;
