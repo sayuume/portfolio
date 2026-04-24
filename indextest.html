@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ポートフォリオ</title>
+  <!-- フォント -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+  <!-- CSS/リセット・スタイル -->
+  <link rel="stylesheet" href="css/reset.css">
+<!-- <link rel="stylesheet" href="css/style2.css">
+<link rel="stylesheet" href="css/extracted.css"> -->
+<link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+
+<!-- <div class="cursor" id="cursor"></div> -->
+<!-- <div class="cursor-ring" id="cursorRing"></div> -->
+
+  <header>
+    <h1>
+  <a href="index.html" class="nav-logo">Umeda Sayumi</a></a></h1>
+    <nav>
+  <ul class="nav-links">
+    <li><a href="#works">Works</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+    </nav>
+  </header>
+<!-- <nav>
+  <a href="index.html" class="nav-logo">Umeda Sayumi</a>
+  <ul class="nav-links">
+    <li><a href="#works">Works</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav> -->
+
+<!-- ヒーロー -->
+<section class="hero">
+  <div class="hero-divider"></div>
+
+  <div class="hero-left">
+    <p class="hero-eyebrow">Web Designer</p>
+    <h2 class="hero-name">
+      梅田沙弓
+      <span>Umeda Sayumi</span>
+    </h2>
+    <p class="hero-desc">
+      クリエイターの創作活動を理解し、<strong>届けるための体験</strong>をデザインする。<br>
+      コーディングからUI設計まで、ユーザー起点で考え抜く。
+    </p>
+    <div class="hero-tags">
+      <span class="hero-tag highlight">Clip Studio 検定取得</span>
+      <span class="hero-tag highlight">AEM経験</span>
+      <span class="hero-tag highlight">HTML / CSS / jQuery</span>
+      <!-- <span class="hero-tag">UI / UX</span> -->
+      <span class="hero-tag highlight">イラスト制作</span>
+    </div>
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      Scroll
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-art">
+      <div class="hero-art-placeholder">
+        <!-- <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="8" y="8" width="48" height="48" stroke="currentColor" stroke-width="1"/>
+          <line x1="8" y1="32" x2="56" y2="32" stroke="currentColor" stroke-width="0.5"/>
+          <line x1="32" y1="8" x2="32" y2="56" stroke="currentColor" stroke-width="0.5"/>
+          <circle cx="32" cy="32" r="12" stroke="currentColor" stroke-width="0.5"/>
+        </svg> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WORKS ===== -->
+<section class="works" id="works">
+
+  <div class="section-header reveal">
+    <h2 class="section-title">Works</h2>
+    <span class="section-count">projects</span>
+  </div>
+
+  <!-- 1行目：旅行（大）＋ はまルカ（中） -->
+  <div class="grid-row-1 reveal">
+
+    <!-- 旅行予約サービス -->
+    <a href="works_web5.html" class="work-card work-card--large">
+      <div class="thumb-placeholder">
+        <img src="img/works-thumb10.jpg" width="841" alt="">
+      </div>
+      <div class="work-card-arrow">↗</div>
+      <div class="work-card-info">
+        <p class="work-card-tag">実務 — 2025 / 2026</p>
+        <h3 class="work-card-title">旅行予約サービス 季節の特集ページ</h3>
+        <p class="work-card-sub">デザイン / コーディング / AEM</p>
+      </div>
+    </a>
+
+    <!-- はまルカ -->
+    <a href="works_web3.html" class="work-card work-card--medium">
+      <div class="thumb-placeholder">
+        <img src="img/works-thumb1.jpg" width="526" alt="">
+      </div>
+      <div class="work-card-arrow">↗</div>
+      <div class="work-card-info">
+        <p class="work-card-tag">自主制作 — 2024</p>
+        <h3 class="work-card-title">はまルカのおうち</h3>
+        <p class="work-card-sub">企画 / デザイン / コーディング / イラスト</p>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- 2行目：バナー＋イラスト＋自主制作 -->
+  <div class="grid-row-2 reveal">
+
+    <!-- バナー（モーダル） -->
+    <div class="work-card work-card--small" onclick="openModal('banner')">
+      <div class="thumb-placeholder thumb-placeholder--small thumb-placeholder--banner">
+      <img src="img/bnr_5.jpg" alt="">
+      </div>
+      <span class="modal-badge">Gallery ↗</span>
+      <div class="work-card-arrow">↗</div>
+      <div class="work-card-info">
+        <p class="work-card-tag">実務 — 2025</p>
+        <h3 class="work-card-title">Banner Works</h3>
+        <p class="work-card-sub">3点 — 旅行 / 引越し / スーパー</p>
+      </div>
+    </div>
+
+    <!-- イラスト（モーダル） -->
+    <div class="work-card work-card--small" onclick="openModal('illust')">
+      <div class="thumb-placeholder thumb-placeholder--small thumb-placeholder--illust">
+        <img src="img/icon1.jpg" alt="">
+      </div>
+      <span class="modal-badge">Gallery ↗</span>
+      <div class="work-card-arrow">↗</div>
+      <div class="work-card-info">
+        <p class="work-card-tag">個人依頼 — 2023</p>
+        <h3 class="work-card-title">Illustration Works</h3>
+        <p class="work-card-sub">イラスト個人依頼実績</p>
+      </div>
+    </div>
+
+    <!-- 朝ぼらけ -->
+    <a href="works_web2.html" class="work-card work-card--small">
+      <div class="thumb-placeholder thumb-placeholder--small thumb-placeholder--asaborake">
+        <img src="img/works-thumb2.jpg" width="455" alt="">
+      </div>
+      <div class="work-card-arrow">↗</div>
+      <div class="work-card-info">
+        <p class="work-card-tag">自主制作 — 2024</p>
+        <h3 class="work-card-title">箱根温泉 朝ぼらけ</h3>
+        <p class="work-card-sub">企画 / デザイン / コーディング</p>
+      </div>
+    </a>
+  <!-- 3行目：ヤマダ物流 -->
+    <a href="works_web1.html" class="work-card work-card--small">
+      <div class="thumb-placeholder thumb-placeholder--small thumb-placeholder--yamada">
+        <img src="img/works-thumb3.jpg"  alt="">
+      </div>
+      <div class="work-card-arrow">↗</div>
+      <div class="work-card-info">
+        <p class="work-card-tag">自主制作 — 2024</p>
+        <h3 class="work-card-title">ヤマダ物流</h3>
+        <p class="work-card-sub">企画 / デザイン / コーディング</p>
+      </div>
+    </a>
+  </div>
+
+  <!-- ケーススタディ -->
+  <div class="featured reveal">
+    <div>
+      <p class="featured-label">Featured Case Study — Self-Initiated</p>
+      <h3 class="featured-title">はまルカのおうち<br>キャラクターWebサイト</h3>
+      <p class="featured-body">
+        横浜出身のシロイルカキャラクター「はまルカ」の公式サイトを
+        <strong>企画から一人で完結</strong>。3ペルソナの設計・情報設計・
+        デザイン・コーディング・オリジナルイラスト制作まで全工程を担当。
+        グッズ購入・利用申請という<strong>複数CVへの導線設計</strong>と、
+        ファン・新規・企業という異なるユーザーへの対応が最大のチャレンジだった。
+      </p>
+      <div class="featured-chips">
+        <span class="chip">ペルソナ設計</span>
+        <span class="chip">情報設計</span>
+        <span class="chip">デザインカンプ</span>
+        <span class="chip">SCSS</span>
+        <span class="chip">jQuery</span>
+        <span class="chip">アニメーション</span>
+        <span class="chip">イラスト制作</span>
+        <span class="chip">ロゴ</span>
+      </div>
+      <a href="works_web3.html" class="featured-link">ケーススタディを見る →</a>
+    </div>
+    <div class="featured-visual">
+       <img src="img/dc3.jpg" alt="はまルカのおうち">
+      <p class="featured-visual-placeholder">はまルカのおうち</p>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ===== バナーモーダル ===== -->
+<div class="modal-overlay" id="modal-banner" onclick="closeOnOverlay(event, 'banner')">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 class="modal-title">Banner Works</h2>
+      <button class="modal-close" onclick="closeModal('banner')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="banner-gallery">
+
+        <!-- バナー1：旅行サービス -->
+        <div class="banner-item">
+          <img src="img/bnr_8.jpg" alt="旅行予約サービス バナー">
+          <div class="banner-placeholder">
+            旅行予約サービス バナー
+          </div>
+          <div class="banner-item-info">
+            <div>
+              <p class="banner-item-label">実務 — 2025</p>
+              <p class="banner-item-title">旅行予約サービス バナー</p>
+            </div>
+            <p class="banner-item-scope">Design</p>
+          </div>
+        </div>
+
+        <!-- バナー2：引越し業者 -->
+        <div class="banner-item">
+          <img src="img/bnr_6.jpg" alt="単身定額サービス バナー" onerror="this.style.display='none'">
+          <div class="banner-placeholder" id="placeholder-moving">
+            引越し業者 バナー
+          </div>
+          <div class="banner-item-info">
+            <div>
+              <p class="banner-item-label">実務 — 2025（制作会社）</p>
+              <p class="banner-item-title">引越し業者 単身定額サービス バナー</p>
+            </div>
+            <p class="banner-item-scope">Design</p>
+          </div>
+        </div>
+
+        <!-- バナー3：スーパー おせち -->
+        <div class="banner-item">
+          <img src="img/bnr_5.jpg" alt="おせち バナー" onerror="this.style.display='none'">
+          <div class="banner-placeholder" id="placeholder-osechi">
+            スーパー おせち バナー
+          </div>
+          <div class="banner-item-info">
+            <div>
+              <p class="banner-item-label">実務 — 2024（制作会社）</p>
+              <p class="banner-item-title">スーパー おせちご予約バナー</p>
+            </div>
+            <p class="banner-item-scope">Design</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- <div class="modal-note">
+        <strong>※ 掲載にあたって</strong> クライアント名・ブランド名は掲載不可のため一部ぼかし処理を行っています。
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<!-- ===== イラストモーダル ===== -->
+<div class="modal-overlay" id="modal-illust" onclick="closeOnOverlay(event, 'illust')">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 class="modal-title">Illustration Works</h2>
+      <button class="modal-close" onclick="closeModal('illust')">✕</button>
+    </div>
+    <div class="modal-body">
+      <p class="illust-modal-desc">
+        個人依頼によるイラスト制作実績（2023年）。
+        CLIP STUDIO PAINT / Procreate を使用。
+      </p>
+      <div class="illust-gallery">
+        <!-- 画像は img/illust-1.jpg 〜 img/illust-6.jpg などに差し替えてください -->
+        <div class="illust-item"><img src="img/icon1.jpg" alt=""><div class="illust-placeholder">Illust 01</div></div>
+        <div class="illust-item"><img src="img/icon2.jpg" alt=""><div class="illust-placeholder">Illust 02</div></div>
+        <div class="illust-item"><img src="img/icon3.jpg" alt=""><div class="illust-placeholder">Illust 03</div></div>
+        <div class="illust-item"><img src="img/icon4.jpg" alt=""><div class="illust-placeholder">Illust 04</div></div>
+        <div class="illust-item"><img src="img/icon5.jpg" alt=""><div class="illust-placeholder">Illust 05</div></div>
+        <div class="illust-item"><img src="img/icon9.jpg" alt=""><div class="illust-placeholder">Illust 06</div></div>
+      </div>
+      <div class="modal-note modal-note--illust">
+        <strong>※ 使用ツール</strong> CLIP STUDIO PAINT / Procreate
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- About -->
+<section class="about" id="about">
+  <div>
+    <h2 class="section-title">About</h2>
+  </div>
+  <div class="reveal">
+    <div class="about-body">
+      <p>
+        接客・CADオペレーターを経てWebデザイナーへ。<strong>異なる領域での実務経験</strong>がユーザーの多様性を解像度高く捉える視点を育てた。
+      </p>
+      <p>
+        現在は旅行予約サービスにて、<strong>AEM（Adobe Experience Manager）</strong>を用いた
+        特集ページ制作・バナー制作・サイト運用を担当。大規模サービスの制作フローを日常として扱う。
+      </p>
+      <p>
+        プライベートではイラストレーターとしても活動中。
+        クリエイターの創作プロセスを<strong>内側から知っている</strong>デザイナーとして、
+        クリエイター支援サービスの体験設計に携わりたい。
+      </p>
+    </div>
+    <div class="about-highlight">
+      <p class="about-highlight-text">
+        「目にするすべてのものがデザインされている」という気づきから出発し、
+        いまは<strong>使う人の感情を動かす体験</strong>をつくることを仕事にしている。
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© Umeda Sayumi</span>
+  <span>Web Designer</span>
+</footer>
+<script src="js/scripttest.js"></script>
+</body>
+
+</html>
