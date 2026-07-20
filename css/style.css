@@ -1037,6 +1037,10 @@ footer {
 .modal_body{
   padding: 16px;
 }
+.studies_inner:nth-child(odd) {
+    border-right: var(--line);
+    border-bottom: none;
+}
 }
 
 /* ============================================================
